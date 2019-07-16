@@ -4,9 +4,12 @@
     <div class="row">
       <h1>Card Battle!</h1>
       <section id="game" class="row">
+        <!-- 开始组件 -->
         <start-scene></start-scene>
+        <!-- 游戏进行的组件 -->
         <game-scene></game-scene>
-        <game-over-scene></game-over-scene>
+        <!-- 游戏结束的组件 -->
+        <game-over-scene></game-over-scene> 
       </section>
     </div>
   </header>
@@ -31,13 +34,14 @@
 </script>
 
 <style scoped>
+  /* 游戏界面的大小，三个组件都在此页面 */
   #game {
     width: 480px;
     height: 600px;
     border-radius: 8px;
     overflow: hidden;
   }
-
+   
   .scene {
     width: 100%;
     height: 100%;
@@ -55,8 +59,5 @@
     transform: translate3d(0, 0, 0)
   }
 
-  #payme {
-    width:240px;
-    height: 256px;
-  }
+
 </style>
